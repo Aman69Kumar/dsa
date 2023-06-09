@@ -416,3 +416,6 @@ int main(int argc, char** argv) {
 This code allows the user to interactively apply different 2D transformations to a polygon using OpenGL. The program sets up an OpenGL window, displays the initial polygon, and applies the selected transformation based on user input.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

@@ -387,3 +387,6 @@ The `main` function is the entry point of the program. It initializes GLUT, sets
 Overall, this program uses OpenGL and GLUT to draw circles, handle mouse clicks, and provide a menu for different actions such as drawing, clearing, and filling circles. It implements various functions to achieve these functionalities using the provided OpenGL functions.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

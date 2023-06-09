@@ -444,3 +444,6 @@ The `main` function is the entry point of the program. It initializes GLUT, sets
 This code sets up an interactive program where the user can draw circles, clear the screen, fill circles with color, and exit the program using mouse clicks and a menu.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

@@ -172,3 +172,6 @@ Finally, the `glutMainLoop` function is called to start the event processing loo
 That's the detailed explanation of the complete code. It takes the user-specified control points, calculates the Bezier curve points, and displays the curve using OpenGL and GLUT functions.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

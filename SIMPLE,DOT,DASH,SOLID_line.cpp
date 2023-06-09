@@ -134,3 +134,6 @@ Here's a breakdown of the program:
 Overall, this program provides a basic implementation of DDA line drawing in OpenGL, allowing the user to interactively draw lines with different line types.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

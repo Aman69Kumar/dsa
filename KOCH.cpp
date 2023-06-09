@@ -93,3 +93,6 @@ Sure! Here's a detailed explanation of the provided code:
 Overall, the code uses OpenGL and GLUT functions to draw a Koch curve based on the user-provided parameters. The Koch curve is drawn recursively by dividing the line segment into smaller segments and drawing them iteratively. The resulting Koch curve is displayed in an OpenGL window.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

@@ -197,3 +197,6 @@ Let's go through the code step by step:
 Overall, this code creates a graphical window, allows the user to select a polygon vertex and a color from the color palette, and fills the selected polygon with the chosen color using the Boundary Fill algorithm.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

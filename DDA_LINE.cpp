@@ -109,3 +109,6 @@ Certainly! Here's a description of the code:
    - Starts the main event loop using `glutMainLoop`, which continuously redraws the scene until the program is closed.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

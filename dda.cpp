@@ -40,39 +40,47 @@ void dda(float x1, float y1, float x2, float y2)
 			print_point(round_off(x), round_off(y));
 	}
 }
-
 void draw()
 {
+    glClear(GL_COLOR_BUFFER_BIT); // Clear the buffer before drawing
 
-	dda(-640, 0, 640, 0);
-	dda(0, -480, 0, 480);
+    // Draw axes
+    dda(-640, 0, 640, 0);
+    dda(0, -480, 0, 480);
 
-	dda(X1, Y1, X2, Y1);
-	dda(X2, Y1, X2, Y2);
-	dda(X1, Y2, X2, Y2);
-	dda(X1, Y1, X1, Y2);
+    // Draw rectangle
+    dda(X1, Y1, X2, Y1);
+    dda(X2, Y1, X2, Y2);
+    dda(X1, Y2, X2, Y2);
+    dda(X1, Y1, X1, Y2);
 
-	dda((X2 + X1) / 2, Y1, X2, (Y2 + Y1) / 2);
-	dda(X2, (Y2 + Y1) / 2, (X2 + X1) / 2, Y2);
-	dda(X1, (Y2 + Y1) / 2, (X2 + X1) / 2, Y2);
-	dda((X2 + X1) / 2, Y1, X1, (Y2 + Y1) / 2);
+    // Draw diagonals
+    dda((X2 + X1) / 2, Y1, X2, (Y2 + Y1) / 2);
+    dda(X2, (Y2 + Y1) / 2, (X2 + X1) / 2, Y2);
+    dda(X1, (Y2 + Y1) / 2, (X2 + X1) / 2, Y2);
+    dda((X2 + X1) / 2, Y1, X1, (Y2 + Y1) / 2);
 
-	dda((X2 + 3 * X1) / 4, (Y2 + 3 * Y1) / 4, (3 * X2 + X1) / 4, (Y2 + 3 * Y1) / 4);
-	dda((3 * X2 + X1) / 4, (Y2 + 3 * Y1) / 4, (3 * X2 + X1) / 4, (3 * Y2 + Y1) / 4);
-	dda((X2 + 3 * X1) / 4, (3 * Y2 + Y1) / 4, (3 * X2 + X1) / 4, (3 * Y2 + Y1) / 4);
-	dda((X2 + 3 * X1) / 4, (Y2 + 3 * Y1) / 4, (X2 + 3 * X1) / 4, (3 * Y2 + Y1) / 4);
+    // Draw inner lines
+    dda((X2 + 3 * X1) / 4, (Y2 + 3 * Y1) / 4, (3 * X2 + X1) / 4, (Y2 + 3 * Y1) / 4);
+    dda((3 * X2 + X1) / 4, (Y2 + 3 * Y1) / 4, (3 * X2 + X1) / 4, (3 * Y2 + Y1) / 4);
+    dda((X2 + 3 * X1) / 4, (3 * Y2 + Y1) / 4, (3 * X2 + X1) / 4, (3 * Y2 + Y1) / 4);
+    dda((X2 + 3 * X1) / 4, (Y2 + 3 * Y1) / 4, (X2 + 3 * X1) / 4, (3 * Y2 + Y1) / 4);
+
+    glFlush(); // Update the display
 }
+
 
 void init()
 {
-	glClearColor(1.0, 1.0, 1.0, 0.0);
-	glClear(GL_COLOR_BUFFER_BIT);
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
-	glColor3f(0.0, 0.0, 0.0);
-	gluOrtho2D(-640, 640, -480, 480);
-	draw();
+    glClearColor(1.0, 1.0, 1.0, 0.0);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glColor3f(0.0, 0.0, 0.0);
+    gluOrtho2D(-640, 640, -480, 480);
+    glutDisplayFunc(draw); // Update this line
 }
+
 
 int main(int argc, char **argv)
 {
@@ -129,3 +137,9 @@ Certainly! Here's a detailed explanation of the code:
    - Starts the main event loop using `glutMainLoop`, which continuously redraws the scene until the program is closed.
 
 */
+
+
+/* -400 -400 100 100 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

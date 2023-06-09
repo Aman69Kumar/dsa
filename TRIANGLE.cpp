@@ -71,3 +71,6 @@ Let's go through the program step by step:
 
 In summary, this program sets up an OpenGL window using GLUT, defines a `display()` function to render a triangle, and enters the main event processing loop to display the triangle on the screen. The triangle is defined by three vertices with assigned colors, and the program uses the OpenGL pipeline to render the triangle on the screen.
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

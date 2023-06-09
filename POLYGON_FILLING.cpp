@@ -162,3 +162,6 @@ Sure! Let's go through the code and explain its functionality along with some re
 
 Overall, this code provides a simple graphical interface using OpenGL and GLUT to perform the Boundary Fill and Flood Fill algorithms based on user input and mouse clicks. The user can select the algorithm and choose colors to fill shapes on the screen.
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

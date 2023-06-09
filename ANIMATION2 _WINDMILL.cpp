@@ -272,3 +272,6 @@ The `main` function initializes GLUT, sets the display mode to double-buffered, 
 When the program is executed, it creates a window titled "WINDMILL" and displays two windmills that rotate continuously. The animation is achieved by repeatedly updating the frame number and redisplaying the window.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

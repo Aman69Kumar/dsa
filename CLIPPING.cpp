@@ -354,3 +354,6 @@ Let's go through the code and explain each function:
 The code uses OpenGL functions to draw the polygons and handles user input through the menu. It clips the polygon against the clipping window by iterating over its edges and performing the necessary clipping calculations. The clipped polygon is then displayed using OpenGL.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

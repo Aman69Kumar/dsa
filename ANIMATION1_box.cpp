@@ -150,3 +150,6 @@ The main function initializes GLUT, sets the display mode, window size, and posi
 When the program is executed, it creates a window titled "Animation" and displays a rectangle that moves horizontally back and forth within the window. The animation is achieved by repeatedly redrawing the window with updated coordinates using the timer function.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */

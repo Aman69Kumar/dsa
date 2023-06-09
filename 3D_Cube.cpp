@@ -151,3 +151,6 @@ It's important to note that the order in which the vertices are specified determ
 By specifying the vertices of the cube's faces using `glVertex3f`, the code defines the geometry of the cube, which is then transformed and rendered based on the applied transformations and the viewing parameters set up in the code.
 
 */
+
+/* cd Desktop  g++ bresencircle.cpp -lglut -lGL -lGLEW -lGLU -o bresencircle
+./a.out  */
